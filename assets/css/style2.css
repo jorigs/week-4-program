@@ -25,6 +25,8 @@ img {
     width: 100px;
     height: 100px;
     border: 2px solid lightblue;
+    justify-content: space-between;
+
 }
 
 img:hover {
@@ -50,6 +52,7 @@ img:hover {
 	color:white;
 	text-align: center;
 }
+
 
 .score {
 	text-align: center;
