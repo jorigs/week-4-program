@@ -1,0 +1,87 @@
+/*font-family: 'Quicksand', sans-serif;
+font-family: 'Slabo 27px', serif;*/
+
+
+* {
+
+}
+
+
+body {
+	background-image: url();
+	font-family: 'Slabo 27px', serif;
+	margin: 20px;
+}
+
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	margin: 50px;
+	padding: 20px;
+	background-color: purple;
+	width: 450px;
+	color:white;
+
+}
+
+p {
+
+}
+
+img {
+	width: 100px;
+	margin: 10px;
+}
+
+#title {
+	text-align: center;
+	}
+
+
+.directions {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	margin: 50px;
+	padding: 20px;
+	background-color: lightblue;
+	width: 450px;
+	color:white;
+}
+
+#randomNumber {
+	background-color: pink;
+	margin: 10px 10px 50px 50px;
+	padding: 20px;
+	width: 200px;
+	float:left;
+
+}
+
+#winLoss {
+	background-color: yellow;
+	margin: 10px 50px 50px 0px;
+	padding: 20px;
+	width: 100px;
+	float:left;
+}
+
+#crystals {
+	clear: both;
+	margin: 30px;
+	padding: 20px;
+}
+
+.score {
+	background-color: lavender;
+	margin: 50px;
+	padding: 20px;
+}
+
+#total {
+	background-color: lightgreen;
+}
+
+#scoreIs {
+	background-color: grey;
+}
+
