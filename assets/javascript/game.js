@@ -38,6 +38,7 @@ function reset () {
 	crystal3 = getRandInt(1,12);
 	crystal4 = getRandInt(1,12);
 	totalScore = 0;
+	$('#totalScore').text(totalScore)
 }
 
 
@@ -46,15 +47,19 @@ function youWin() {
 	alert("You Win!");
 	wins++;
 	$('#wins').text(wins);
+	reset();
 }
 
 function youLose() {
 	alert("You Lose :(");
 	losses++;
 	$("#losses").text(losses);
+	reset();
 }
 
-
+//clicking each crystal makes your score go up
+//if score equals random number, you win
+//if score goes above, you lose.
 function clickCrystal () {
 	$("#first").on("click", function() {
 		totalScore += crystal1;
