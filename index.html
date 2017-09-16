@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand|Slabo+27px" rel="stylesheet">
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
 </head>
 <body>
 	<header>
@@ -27,7 +28,7 @@
 	</section>
 
 	<section id="randomNumber">
-		<p>fill text</p>
+		<p id="ranNum">fill text</p>
 	</section>
 
 	<section id="winLoss">
@@ -36,10 +37,13 @@
 	</section>
 
 	<section id="crystals">
-		<img src="assets/images/8f3e688816b9a185b14d78840310a02e.jpg">
-		<img src="assets/images/11192a17061dc3b94b4a1a786fc4c1db.jpeg">
-		<img src="assets/images/crystals.jpg">
-		<img src="assets/images/item_236198_l.jpg">
+		<img id="first" src="assets/images/8f3e688816b9a185b14d78840310a02e.jpg">
+
+		<img  id="second" src="assets/images/11192a17061dc3b94b4a1a786fc4c1db.jpeg">
+
+		<img  id="third" src="assets/images/crystals.jpg">
+
+		<img  id="fourth" src="assets/images/item_236198_l.jpg">
 	</section>
 
 	<section class="score">
@@ -47,11 +51,15 @@
 			<p>Your total score is:</p>
 		</div>
 
-		<div id="scoreIs">
+		<div>
+			<p id="totalScore">fill text</p>
 		</div>
 
 	</section>
-
-<script type="text/javascript" href="assets/javascript/jame.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
