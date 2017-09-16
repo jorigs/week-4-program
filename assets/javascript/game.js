@@ -4,10 +4,17 @@ var crystal1;
 var crystal2;
 var crystal3;
 var crystal4;
-var wins;
-var losses;
+var wins = 0;
+var losses = 0;
 var turnCounter = 20;
 var totalScore = 0;
+
+// function playGame () {
+// 	getRandInt();
+// }
+
+$("#wins").text(wins);
+$("#losses").text(losses);
 
 
 function getRandInt(min, max) {
@@ -24,34 +31,77 @@ function ranNum() {
 	$("#ranNum").html(random);
 }
 
+function youWin() {
+	alert("You Win!");
+	$('#wins').text(wins);
+}
+
+function youLose() {
+	alert("You Lose :(");
+	$("#losses").text(losses);
+}
+
 
 
 function clickCrystal () {
 	$("#first").on("click", function() {
 		totalScore += crystal1;
 		turnCounter--;
-		$("#totalScore").html(totalScore);
 		console.log("Current score is " + totalScore);
+		$("#totalScore").html(totalScore);
+			if (totalScore === random) {
+				youWin();
+			} else if (totalScore > random) {
+				youLose();
+			}
 	})
 	$("#second").on("click", function() {
 		totalScore += crystal2;
 		turnCounter--;
-		$("#totalScore").html(totalScore);
 		console.log("Current score is " + totalScore);
+		$("#totalScore").html(totalScore);
+			if (totalScore === random) {
+				youWin();
+			} else if (totalScore > random) {
+				youLose();
+			}
 	})
 	$("#third").on("click", function() {
 		totalScore += crystal3;
 		turnCounter--;
-		$("#totalScore").html(totalScore);
 		console.log("Current score is " + totalScore);
+		$("#totalScore").html(totalScore);
+			if (totalScore === random) {
+				youWin();
+			} else if (totalScore > random) {
+				youLose();
+			}
 	})
 	$("#fourth").on("click", function() {
 		totalScore += crystal4;
 		turnCounter--;
-		$("#totalScore").html(totalScore);
 		console.log("Current score is " + totalScore);
+		$("#totalScore").html(totalScore);
+			if (totalScore === random) {
+				youWin();
+			} else if (totalScore > random) {
+				youLose();
+			}
 	})
 }
+
+// function winLose () {
+// 	if ()
+// }
+
+// function reset() {
+// 	wins = 0;
+// 	winCount.innerHTML = wins;
+// 	losses = 0;
+// 	lossCount.innerHTML = losses;
+// 	blankShow = [];
+// 	playGame();
+// }
 
 getRandInt();
 
